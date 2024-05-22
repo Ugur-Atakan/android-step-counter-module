@@ -18,12 +18,23 @@
 
     <!-- The permission required to show data to foreground while in background, in our scenario to show notification when put to background. -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+   
+   
+    <!-- The permission required to acces user current location. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+        <!-- The permission required to acces user current location at background -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
     <!-- When starting the Foreground service, it is mandatory to specify the type of the service.  -->
     <uses-permission
         android:name="android.permission.FOREGROUND_SERVICE_HEALTH"
         android:minSdkVersion="33" />
     
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_LOCATION"
+        android:minSdkVersion="33" />
+
     <uses-feature
         android:name="android.hardware.sensor.stepcounter"
         android:required="false" />

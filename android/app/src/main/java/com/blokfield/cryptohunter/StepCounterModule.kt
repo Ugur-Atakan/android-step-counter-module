@@ -70,6 +70,7 @@ class StepCounterModule internal constructor(context: ReactApplicationContext) :
         }
         Log.d(TAG_NAME, "startStepCounterUpdate")
         stepCounterListener!!.startService()
+        startBackgroundService()
     }
 
     @ReactMethod
